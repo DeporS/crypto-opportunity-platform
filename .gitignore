@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# Data
+data/parquet/*
+data/checkpoints/*
+data/replay/*
+
+!data/parquet/.gitkeep
+!data/checkpoints/.gitkeep
+!data/replay/.gitkeep
+
+# Logs
+*.log
+
+# Docker
+.docker/
