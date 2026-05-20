@@ -50,7 +50,9 @@ services:
     environment:
       KAFKA_BOOTSTRAP_SERVERS: kafka:29092
       KAFKA_TOPIC: raw.trades
-      BINANCE_WS_URL: wss://stream.binance.com:9443/ws/btcusdt@trade
+      KAFKA_DLQ_TOPIC: dlq.trades
+      SYMBOLS: btcusdt,ethusdt,solusdt,bnbusdt,xrpusdt,dogeusdt,adausdt,avaxusdt,linkusdt
+      LOG_LEVEL: INFO
     depends_on:
       - kafka
       - kafka-init

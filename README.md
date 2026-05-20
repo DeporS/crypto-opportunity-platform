@@ -19,14 +19,21 @@ Real-Time Crypto Opportunity Detection Platform focused on:
 - Prometheus
 - Grafana
 
-## Planned Features
+### Current pipeline
 
-- realtime crypto market ingestion,
-- stream processing pipelines,
-- momentum detection,
-- anomaly detection,
-- signal scoring,
-- replay/backtesting engine,
-- observability dashboards,
-- strategy engine,
-- paper trading simulation.
+```text
+Binance WebSocket
+        ↓
+Dockerized ingestion-service
+        ↓
+Apache Kafka (raw.trades topic)
+```
+
+### Example tracked symbols
+
+- BTCUSDT
+- ETHUSDT
+- SOLUSDT
+- BNBUSDT
+- XRPUSDT
+- DOGEUSDT
