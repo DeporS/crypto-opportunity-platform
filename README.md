@@ -1,42 +1,32 @@
 # crypto-opportunity-platform
 
-# Project structure
+Real-Time Crypto Opportunity Detection Platform focused on:
 
-├── services/
-│ ├── ingestion-service/
-│ ├── stream-processing/
-│ ├── signal-engine/
-│ ├── alert-service/
-│ ├── strategy-engine/
-│ ├── api-gateway/
-│ └── backtesting-engine/
-│
-├── shared/
-│ ├── schemas/
-│ ├── utils/
-│ ├── configs/
-│ └── clients/
-│
-├── infra/
-│ ├── docker/
-│ ├── kafka/
-│ ├── spark/
-│ ├── grafana/
-│ ├── prometheus/
-│ └── airflow/
-│
-├── data/
-│ ├── parquet/
-│ ├── checkpoints/
-│ └── replay/
-│
-├── notebooks/
-│
-├── dashboards/
-│
-├── docs/
-│ ├── architecture/
-│ ├── diagrams/
-│ └── ADRs/
-│
-└── docker-compose.yml
+- event-driven architecture,
+- realtime stream processing,
+- distributed systems,
+- trading signal analytics,
+- scalable data engineering pipelines.
+
+## Tech Stack
+
+- Python
+- Apache Kafka
+- Spark Structured Streaming
+- FastAPI
+- ClickHouse
+- Docker
+- Prometheus
+- Grafana
+
+## Planned Features
+
+- realtime crypto market ingestion,
+- stream processing pipelines,
+- momentum detection,
+- anomaly detection,
+- signal scoring,
+- replay/backtesting engine,
+- observability dashboards,
+- strategy engine,
+- paper trading simulation.
