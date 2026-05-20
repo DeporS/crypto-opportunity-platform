@@ -42,3 +42,16 @@ services:
     depends_on:
       - kafka
       - kafka-init
+
+  ingestion-service:
+    build:
+      context: ./services/ingestion-service
+    container_name: crypto-ingestion-service
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:29092
+      KAFKA_TOPIC: raw.trades
+      BINANCE_WS_URL: wss://stream.binance.com:9443/ws/btcusdt@trade
+    depends_on:
+      - kafka
+      - kafka-init
+    restart: unless-stopped
